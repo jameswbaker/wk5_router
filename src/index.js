@@ -9,10 +9,15 @@ import Expenses from "./routes/expenses"; // import expenses
 import Expense from "./routes/expense";
 import Invoices from "./routes/invoices"; // import invoices
 import Invoice from "./routes/invoice"; // import invoice
+
+import "./index.css";
+
 const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
 root.render(
+  <div className = "all">
+
   <BrowserRouter>
     <Routes>
       {/* nest route */}
@@ -53,4 +58,6 @@ root.render(
       </Route>
     </Routes>
   </BrowserRouter>
+  
+  </div>
 );
